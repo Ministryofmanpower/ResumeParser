@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>upload</title>
+</head>
+
+<body style="color:rgba(9, 9, 10, 0.642)">
+   
+        <nav>
+        <div class="rightnav">
+        <input text ="Browse" name ="search" id ="search">
+        <button class="btn_btn-sm">SEARCH</button>
+        </div>
+      </nav>
+      <section class="background firstsection">
+        <div class="box-main">
+          <div class="firsthalf">
+            <p class="text-big">RESUME PARSER</p>
+            <h1 style="color:rgba(11, 38, 174, 0.868)">RecruitNXT</h1>
+            <H1 class ="candname">"NEXT GENERATION RECRUITING"</H1>>
+   
+    <br>
+    <h2>Please Choose a Resume </h2>
+    <div id="box1">
+        <form id="uploader_form" action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="images/*" multiple>
+            <input type="submit" id = "button1" value="send">
+
+
+    </div>
+
+    </form>
+<style>
+    .nav-list{
+        overflow: hidden;
+        text-align: center;
+      flex-direction:column;
+  }
+         .navbar{
+      height: 100px;
+      flex-direction: column;
+      transition: all 0.7s ease-out;
+  }
+  select {
+            width: 55%;
+            font-size: 24px;
+            padding: 0.5em;
+            border: 1px solid rgb(244, 245, 250);
+            border-radius: 6px;
+            transition: border-color 0.25s;
+            position: relative;
+            top: 150px;
+            left: 323px;
+        }
+
+        #box1 {
+            justify-items: center;
+            justify-content: center;
+            background-color: transparent;
+            height: 0px;
+            padding: 2rem;
+            outline: none;
+            width: 200px;
+            font-size: 20px;
+            border: solid;
+            position: relative;
+            left: 400px;
+            top: -10px;
+            text-align: center;
+        }
+
+
+        #button1{
+            
+            margin: 1px 224px;
+
+        }
+        h1 {
+            text-align: center;
+            font-size: 80px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: large;
+        }
+
+        body {
+            background-image:linear-gradient(white,blue);
+            background-color: rgb(9, 235, 96);
+        }
+    </style>
+</body>
+
+</html>

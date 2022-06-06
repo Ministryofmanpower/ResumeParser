@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SACHIN WEB APP</title>
+</head>
+<body style="background-image:linear-gradient(white,blue);">
+<style>
+  textarea {
+    resize: none;
+  }
+
+  #main-div {
+    display: flex;
+    border: 1px solid #c3c3c3;
+    flex-direction: row;
+padding: 2rem;
+
+  }
+  #third{
+    margin: 20px;
+  }
+
+  #second{
+    margin-left: 2rem;
+  }
+</style>
+
+<div id="main-div">
+  <div id="second">
+    {% for keys in final_keyss %}
+    <h1>{{keys}}</h1>
+    {% endfor %}
+  </div>
+
+  <div id="third">
+    {% for value in final_value %}
+
+    <h2>{{value}}</h2>
+
+
+    {% endfor %}
+
+  </div>
+
+</div>
+
+</body>
+
+</html>
